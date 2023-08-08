@@ -18,8 +18,9 @@
     </header>
 
     <main class="flex-container">
-        <section class="section1">
-            <input type="radio" name="select_offer" value="1" id="section1.1">
+        <section class="section2">
+          <section class="section2-1">
+            <input type="radio" onclick="display_pairs('first-pair','second-pair','third-pair','DKK 195.00')" name="select_offer" value="DKK 195.00" id="section1.1">
             <label for="section1.1" class="section1-2">
                 <div style="display: flex; flex-direction: column;">
                     <span class="pair">1 Pair</span>
@@ -27,18 +28,44 @@
                 </div>
                 <span class="DKK">50% OFF</span>
             </label>
+          </section> 
+
+            <section class="size-colour" id="first-pair">
+                <table>
+                    <tr>
+                        <td></td>
+                        <td class="size">Size</td>
+                        <td class="color">Colour</td>
+                      </tr>
+                      <tr>
+                        <td class="row-1">#1</td>
+                        <td >
+                            <select name="size" id="size" class="size-input">
+                                <option value="Small">S</option>
+                                <option value="Medium">M</option>
+                                <option value="Large">L</option>
+                              </select>
+                        </td>
+                        <td><select name="color" id="color" class="color-input">
+                            <option value="red">Red</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                          </select></td>
+                      </tr>
+                </table>
+            </section>
         </section>
 
         <section class="section2">
            
            <section class="section2-1">
-                <input type="radio" name="select_offer" value="2" class="section2.2">
+                <input type="radio" onclick="display_pairs('second-pair','first-pair','third-pair','DKK 345.00')" name="select_offer" value="DKK 345.00" id="section2.2">
                    <label for="section2.2" class="section2-3">      
                        <section style="display: flex; flex-direction: column;">
                             <span class="pair">2 Pair</span>
                             <span class="DKK">DKK 345.00</span>
                         </section>
-                        <section style="display: flex; flex-direction: column-reverse;">
+                        <section style="display: flex; flex-direction: column-reverse; padding: 0px 0px 2.5px 0px;">
                             <span class="dkk-disabled"><s>DKK 195.00</s></span>
                         </section>
                         <section style="display: flex; flex-direction: column;">
@@ -48,7 +75,7 @@
                     </label>
             </section>
            
-            <section class="size-colour">
+            <section class="size-colour" id="second-pair">
                 <table>
                     <tr>
                         <td></td>
@@ -57,16 +84,17 @@
                       </tr>
                       <tr>
                         <td class="row-1">#1</td>
-                        <td ><div class="helo">
+                        <td >
                             <select name="size" id="size" class="size-input">
                                 <option value="Small">S</option>
                                 <option value="Medium">M</option>
                                 <option value="Large">L</option>
                               </select>
-                        </div>
                         </td>
                         <td><select name="color" id="color" class="color-input">
-                            <option value="colour">Colour</option>
+                            <option value="red">Red</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
                           </select></td>
                       </tr>
                       <tr>
@@ -78,7 +106,9 @@
                           </select>
                         </td>
                         <td><select name="color" id="color" class="color-input">
-                            <option value="colour">Colour</option>
+                            <option value="red">Red</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
                           </select></td>
                       </tr>
                 </table>
@@ -86,19 +116,74 @@
 
         </section>
 
-        <section class="section1">
-            <input type="radio" name="select_offer" value="1" id="section3.1">
-            <label for="section3.1" class="section1-2">
-                <div style="display: flex; flex-direction: column;">
+        <section class="section2">
+            <section class="section2-1">
+                <input type="radio" onclick="display_pairs('third-pair','second-pair','first-pair','DKK 528.00')" name="select_offer" value="DKK 528.00" id="section3.1">
+                <label for="section3.1" class="section1-2">
+                  <div style="display: flex; flex-direction: column;">
                     <span class="pair">3 Pair</span>
                     <span class="DKK">DKK 528.00</span>
-                </div>
-                <span>60% OFF</span>
-            </label>
+                  </div>
+                 <span class="DKK">60% OFF</span>
+                </label>
+            </section>
+
+            <section class="size-colour" id="third-pair">
+                <table>
+                    <tr>
+                        <td></td>
+                        <td class="size">Size</td>
+                        <td class="color">Colour</td>
+                      </tr>
+                      <tr>
+                        <td class="row-1">#1</td>
+                        <td >
+                            <select name="size" id="size" class="size-input">
+                                <option value="Small">S</option>
+                                <option value="Medium">M</option>
+                                <option value="Large">L</option>
+                              </select>
+                        </td>
+                        <td><select name="color" id="color" class="color-input">
+                            <option value="red">Red</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                          </select></td>
+                      </tr>
+                      <tr>
+                        <td class="row-2">#2</td>
+                        <td><select name="size" id="size" class="size-input">
+                            <option value="Small">S</option>
+                            <option value="Medium">M</option>
+                            <option value="Large">L</option>
+                          </select>
+                        </td>
+                        <td><select name="color" id="color" class="color-input">
+                            <option value="red">Red</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                          </select></td>
+                      </tr>
+                      <tr>
+                        <td class="row-2">#3</td>
+                        <td><select name="size" id="size" class="size-input">
+                            <option value="Small">S</option>
+                            <option value="Medium">M</option>
+                            <option value="Large">L</option>
+                          </select>
+                        </td>
+                        <td><select name="color" id="color" class="color-input">
+                            <option value="red">Red</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                          </select></td>
+                      </tr>
+                </table>
+            </section>
         </section>
         <section class="total-details">
             <span class="shipping-offer">Free 2 Day Shipping</span>
-            <span class="total-price">Total : DKK 360.00</span>
+            <span class="total-price" id="total-price">Total : _ _ _ _</span>
         </section>
         <section class="add-to-cart">
             <button>+Add to Cart</button>
@@ -109,5 +194,16 @@
             <span>&copy; Powered by Pumper</span>
         </section>
     </footer>
+    <script>
+        function display_pairs(a,b,c,val){
+           var change = document.getElementById(a);
+           change.style.display = 'block';
+           var revert_change1 = document.getElementById(b);
+           revert_change1.style.display = 'none';
+           var revert_change2 = document.getElementById(c);
+           revert_change2.style.display = 'none';
+           document.getElementById('total-price').innerHTML = 'Total : '+val;
+        }
+    </script>
 </body>
 </html>
