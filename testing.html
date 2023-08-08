@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 10rem; /* real length of dropdown */
+}
+
+.wrapper:after {
+  content: "▼";
+  font-size: 0.8rem;
+  pointer-events: none; /* ▼ click triggers dropdown */
+  position: absolute;
+  right: 0.2rem;
+  top: 0.3rem;
+  z-index: 1;
+}
+
+select {
+  /* remove default caret */
+  -webkit-appearance: none; /* webkit browsers */
+  -moz-appearance: none; /* firefox */
+  appearance: none; /* modern browsers */
+  width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <section class="wrapper">
+        <select>
+          <option value="" selected>Choose option</option>
+          <option>Option 1</option>
+        </select>
+      </section>
+</body>
+</html>
